@@ -9,6 +9,25 @@ html,body{
     height: 100%;
     width: 100%;
 }
+#cursor{
+    height: 18px;
+    width: 18px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-blur{
+    height: 220px;
+    width: 220px;
+    background-color: rgba(194, 190, 190, 0.562);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+}
+
 #nav{
 height: 80px;
 width: 100%;
@@ -37,5 +56,64 @@ video{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: fixed;
+    z-index: -1;
+    position: fixed; /* agadi ni  leuxa  by btw so,nav xopenxa . hence, we have to give z-index to nav. */
+    
 }
+
+#main{
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.173);
+
+}
+#page1{
+    /* height: 100%;  Yo 100% lagdaina ni coz % vanesi afno parent ko ansar size hunxa , page1 ko 
+    parent main xa and at the time of writting this code main doesnt have any fkin height or width its blank.
+    so height will be 100% of 0 i.e. 0 itself. */
+    height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    cursor:default;
+    
+}
+#page1 h1{
+    font-size: 90px;
+    font-weight: 950;
+    position: relative;
+}
+
+#page1 h1::before{
+    content: "TRAIN. HUSTLE. ACHIEVE.";
+    position: absolute;
+    color: black;
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px #000000;
+    z-index: -1;;
+    
+}
+
+#page1 h2{
+    font-size: 32px;
+    font-weight: 850;
+    margin: 10px;
+    margin-bottom: 12px;
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 400px;
+    width: 40%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+
+}
+

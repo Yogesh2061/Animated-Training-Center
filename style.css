@@ -116,4 +116,44 @@ video{
     z-index: 2;
 
 }
+#scroller{
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 75px;
+    font-weight: 900;
+    font-family: 'gilroy';
+    margin-right: 25px;
+    color: #000000;
+    transition: all linear 0.4s;
+    -webkit-text-stroke: 1px #fff ;
 
+}
+ #scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 28s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ #scroller::-webkit-scrollbar{
+ display: none;
+ }
+ @keyframes scroll{
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+    }
+ }
+  #page #scroller h4:hover{
+   color: rgb(203, 212, 212); 
+ }

@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your training center</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your training center</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div id="nav">
-    <img src="https://www.designevo.com/res/templates/thumb_small/abstract-athlete-and-handball.webp" />
-    <li><a href="#">home</a></li>
-    <li><a href="#">Lessons</a></li>
-    <li><a href="#">Pricing</a></li>
-    <li><a href="#">Entertainment</a></li>
-    <li><a href="#">Tournaments</a></li>
-  </div>
-
-   <div id="cursor"> </div>
-
-   <div id="cursor-blur"> </div>
-
-  <video autoplay loop muted src="https://videos.pexels.com/video-files/4438080/4438080-hd_1920_1080_25fps.mp4"></video>
-
-  <div id="main">
-    <!--  //using main as a wraooer that wraps all pages. -->
-    <div id="page1">
-      <h1>TRAIN. HUSTLE. ACHIEVE.</h1>
-      <h2>WELCOME TO ${NAME} TRAINING CENTER</h2>
-      <p>
-        This Training center is a Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Architecto, asperiores sed. Velit, ipsum commodi
-        distinction.so yo can Lorem, ipsum dolor sit amet consectetur.
-      </p>
+  <body>
+    <div id="nav">
+      <img
+        src="https://www.designevo.com/res/templates/thumb_small/abstract-athlete-and-handball.webp"
+      />
+      <li><a href="#">home</a></li>
+      <li><a href="#">Lessons</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Tournaments</a></li>
     </div>
 
-    <div id="page2"></div>
-  </div>
+    <div id="cursor"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div id="cursor-blur"></div>
 
-  <script src="script.js"></script>
-</body>
+    <video
+      autoplay
+      loop
+      muted
+      src="https://videos.pexels.com/video-files/4438080/4438080-hd_1920_1080_25fps.mp4"
+    ></video>
 
+    <div id="main">
+      <!--  //using main as a wraooer that wraps all pages. -->
+      <div id="page1">
+        <h1>TRAIN. HUSTLE. ACHIEVE.</h1>
+        <h2>WELCOME TO ${NAME} TRAINING CENTER</h2>
+        <p>
+          This Training center is a Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Architecto, asperiores sed. Velit, ipsum commodi
+          distinction.so yo can Lorem, ipsum dolor sit amet consectetur.
+        </p>
+      </div>
+
+      <div id="page2">
+        <!-- <marquee behavior="" direction="">
+          HOME LESSONS PRICING ENTERTAINMENT TOURNAMENTS
+        </marquee> -->
+        <!-- marquee:horizantally move vai rakhxa yeha vitra ko texa haru . like tv channels footer -->
+      <!-- better than marquee/alternate way: -->
+
+        <div id="scroller">
+          <div id="scroller-in">
+             <h4>HOME</h4>
+             <h4>LESSONS</h4>
+             <h4>PRICING</h4>
+             <h4>ENTERTAINMENT</h4>
+             <h4>TOURNAMENTS</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>HOME</h4>
+            <h4>LESSONS</h4>
+            <h4>PRICING</h4>
+            <h4>ENTERTAINMENT</h4>
+            <h4>TOURNAMENTS</h4>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>

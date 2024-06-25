@@ -34,5 +34,5 @@ gsap.to("#main",{
         start:"top -30%",
         end: "top -100%",
         scrub:1    //aba mathi scroll grda pahile kai jsto hunxa (scroll ko basis ma change hunxa)
-    }
+    },
 })

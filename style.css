@@ -27,6 +27,7 @@ body {
   position: fixed;
   filter: blur(50px);
   z-index: 9;
+  transition: all linear 0.4s;
 }
 
 #nav {
@@ -51,6 +52,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 video {
   height: 100%;
@@ -141,6 +143,10 @@ video {
 #scroller::-webkit-scrollbar {
   display: none;
 }
+#scroller h4:hover {
+  color: rgb(203, 212, 212);
+  -webkit-text-stroke: 2px rgb(203, 212, 212) ;
+}
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -149,9 +155,7 @@ video {
     transform: translateX(-100%);
   }
 }
-#scroller h4:hover {
-  color: rgb(203, 212, 212);
-}
+
 
 #about-us {
   height: 40vh;
@@ -162,6 +166,7 @@ video {
   position: relative;
   /* padding: 0 50px; */
   margin-top: 50px;
+  z-index: 10;
 }
 #about-us img {
   height: 240px;
@@ -195,10 +200,11 @@ video {
 .card {
   height: 80%;
   width: 27%;
-  
+  overflow: hidden;
   border-radius: 18px;
   background-size: cover;
   background-position: center;
+  transition: all ease 0.6s;
 }
 #card1 {
   background-image: url(https://images.pexels.com/photos/6295749/pexels-photo-6295749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -209,3 +215,90 @@ video {
 #card3 {
   background-image: url(https://images.pexels.com/photos/9944640/pexels-photo-9944640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
+
+.overlay{
+  height: 100%;
+  width: 100%;
+
+  background-color:#2B2A2A ;
+ 
+ opacity: 0.7;
+  padding: 40px;
+  padding-top:128px;
+  
+ 
+
+}
+.overlay h4{
+  color: #fff;
+
+font-size: 25px;
+text-transform: uppercase;
+white-space: nowrap;
+margin-bottom: 18px;
+
+font-weight: 800;
+
+}
+.overlay p{
+  color: #cec5c5;
+  font-size: 15px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+
+}
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+#grey{
+  margin-top: 40px;
+  height: 28vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2B2A2A;
+}
+#grey h4{
+  width: 45%;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 800;
+}
+#grey img{
+  height: 100%;
+  object-fit: cover;
+  width: 13%;
+
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#page3>p{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  width: 60%;
+  text-align: center;
+}
+
+#page3 img{
+  position: absolute;
+  height: 60px;
+}
+#page3 #colon1{
+  left: 15%;
+  top: 29%;
+}
+#page3 #colon2{
+  bottom: 30%;
+  right: 30%;
+}
+

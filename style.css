@@ -131,6 +131,7 @@ video {
   transition: all linear 0.4s;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+  cursor: pointer;
 }
 #scroller-in {
   display: inline-block;
@@ -222,7 +223,7 @@ video {
 
   background-color:#2B2A2A ;
  
- opacity: 0.7;
+ opacity: 0.8;
   padding: 40px;
   padding-top:128px;
   
